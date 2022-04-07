@@ -55,3 +55,17 @@ Thu Apr  7 15:22:16 UTC 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 9d1b5b9
+Thu Apr  7 15:23:03 UTC 2022: 
+ hashmap.c | 8 +-------
+ 1 file changed, 1 insertion(+), 7 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘createMap’:
+hashmap.c:55:14: error: unused variable ‘Mapa’ [-Werror=unused-variable]
+     HashMap *Mapa;
+              ^~~~
+hashmap.c:57:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+35879e1
