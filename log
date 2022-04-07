@@ -1,0 +1,11 @@
+Thu Apr  7 15:17:16 UTC 2022: 
+ hashmap.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+test.c: In function ‘createMap’:
+hashmap.c:57:11: error: ‘Mapa’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+       Mapa->buckets[i] = NULL;
+       ~~~~^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+7dbb936
