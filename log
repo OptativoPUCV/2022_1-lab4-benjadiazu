@@ -19,3 +19,14 @@ hashmap.c:55:22: error: expected expression before ‘)’ token
                       ^
 Compilation failed
 c51d8fa
+Thu Apr  7 15:18:44 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘createMap’:
+hashmap.c:55:21: error: initialization from incompatible pointer type [-Werror=incompatible-pointer-types]
+     HashMap *Mapa = (Pair*)malloc(sizeof(Pair));
+                     ^
+cc1: all warnings being treated as errors
+Compilation failed
+bbeb4f2
