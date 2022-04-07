@@ -80,3 +80,8 @@ hashmap.c:57:13: error: ‘Mapa’ may be used uninitialized in this function [-
 cc1: all warnings being treated as errors
 Compilation failed
 cb6bc14
+Thu Apr  7 15:27:11 UTC 2022: 
+ hashmap.c | 7 ++-----
+ 1 file changed, 2 insertions(+), 5 deletions(-)
+ tests:  0|0
+354bbfa
