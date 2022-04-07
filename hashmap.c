@@ -52,7 +52,7 @@ void enlarge(HashMap * map) {
 
 
 HashMap * createMap(long capacity) {
-    HashMap *Mapa;
+    HashMap *Mapa = ();
     for (int i = 0 ; i < capacity ; i++){
       Mapa->buckets[i] = NULL;
     }
