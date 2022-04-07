@@ -54,6 +54,8 @@ void enlarge(HashMap * map) {
 HashMap * createMap(long capacity) {
     HashMap *Mapa = (HashMap*)malloc(sizeof(HashMap));
     Mapa->capacity = capacity;
+
+    Mapa->bucket = (Pair**)malloc(sizeof(Pair));
     Mapa->current = -1;
     
     return Mapa;
