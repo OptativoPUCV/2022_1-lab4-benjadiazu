@@ -54,8 +54,9 @@ void enlarge(HashMap * map) {
 HashMap * createMap(long capacity) {
     HashMap *Mapa = NULL;
   
-
     Mapa->current = -1;
+    Mapa->capacity = capacity;
+    Mapa->buckets = NULL;
     return Mapa;
 }
 
