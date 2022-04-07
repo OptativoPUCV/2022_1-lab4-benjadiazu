@@ -129,3 +129,20 @@ hashmap.c:58:61: error: expected expression before ‘)’ token
                                                              ^
 Compilation failed
 d16d3ce
+Thu Apr  7 15:32:17 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘createMap’:
+hashmap.c:58:62: error: expected expression before ‘)’ token
+     Mapa->buckets = (Pair**)malloc(sizeof (capacity * (Pair*));
+                                                              ^
+hashmap.c:64:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+hashmap.c:64:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+b469957
