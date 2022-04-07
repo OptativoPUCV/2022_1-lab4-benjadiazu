@@ -30,3 +30,8 @@ hashmap.c:55:21: error: initialization from incompatible pointer type [-Werror=i
 cc1: all warnings being treated as errors
 Compilation failed
 bbeb4f2
+Thu Apr  7 15:19:05 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+2a75bb3
