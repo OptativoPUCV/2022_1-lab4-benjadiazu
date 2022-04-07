@@ -47,7 +47,7 @@ void insertMap(HashMap * map, char * key, void * value) {
         if (is_equal(key,map->buckets[posicion]->key) == 1){
             return;
         }
-        posicion = (posicion + 1)%map->capacity;
+        posicion = (posicion + 1)%(map->capacity);
     }
   
     if (map->buckets[posicion] != NULL){
