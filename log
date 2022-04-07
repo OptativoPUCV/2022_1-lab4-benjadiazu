@@ -296,3 +296,9 @@ hashmap.c:45:11: error: unused variable ‘aux’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 6f37f8e
+Thu Apr  7 16:00:18 UTC 2022: 
+ hashmap.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  1|5
+total_score: 10/70
+c5d8091
