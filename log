@@ -181,3 +181,17 @@ Thu Apr  7 15:37:00 UTC 2022:
  tests:  1|5
 total_score: 10/70
 965136f
+Thu Apr  7 15:37:26 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘createMap’:
+hashmap.c:56:26: error: too few arguments to function ‘calloc’
+     Pair **Par = (Pair**)calloc(sizeof(Pair*) * capacity);
+                          ^~~~~~
+In file included from test.c:2:0:
+/usr/include/stdlib.h:541:14: note: declared here
+ extern void *calloc (size_t __nmemb, size_t __size)
+              ^~~~~~
+Compilation failed
+38692d1
