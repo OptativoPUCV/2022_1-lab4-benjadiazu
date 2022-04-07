@@ -313,3 +313,15 @@ Thu Apr  7 16:03:50 UTC 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 29d8df3
+Thu Apr  7 16:05:03 UTC 2022: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:60:5: error: ‘mapa’ undeclared (first use in this function); did you mean ‘map’?
+     mapa->size++;
+     ^~~~
+     map
+hashmap.c:60:5: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+86bbc19
