@@ -54,11 +54,11 @@ void enlarge(HashMap * map) {
 HashMap * createMap(long capacity) {
     HashMap *Mapa = NULL;
   
-    Mapa->current = -1;
     Mapa->capacity = capacity;
     for (int i = 0 ; i < capacity ; i++){
-      Mapa->buckets[i] = NULL;
+        Mapa->buckets[i] = NULL;
     }
+    Mapa->current = -1;
     return Mapa;
 }
 
