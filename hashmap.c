@@ -41,7 +41,8 @@ int is_equal(void* key1, void* key2){
 
 void insertMap(HashMap * map, char * key, void * value) {
     long posicion = hash(key,map->capacity);
-
+    Pair *aux = (Pair*)malloc(sizeof(Pair));
+    aux = createPair(key,value);
     
     while (map->buckets[posicion] != NULL && map->buckets[posicion]->key != NULL){
         if (is_equal(key,map->buckets[posicion]->key) == 1) return;
@@ -49,8 +50,7 @@ void insertMap(HashMap * map, char * key, void * value) {
     }
   
     if (map->buckets[posicion] == NULL){
-        map->buckets[posicion]->key = key;
-        map->buckets[posicion]->value = value;
+        map->buckets[posicion] = aux;
     }
     else{
         createPair(key,value);

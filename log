@@ -353,3 +353,9 @@ Thu Apr  7 16:06:23 UTC 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 077a73c
+Thu Apr  7 16:09:52 UTC 2022: 
+ hashmap.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+ tests:  5|4
+total_score: 30/70
+bfad562
