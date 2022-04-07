@@ -56,7 +56,9 @@ HashMap * createMap(long capacity) {
   
     Mapa->current = -1;
     Mapa->capacity = capacity;
-    Mapa->buckets = NULL;
+    for (int i = 0 ; i < capacity ; i++){
+      Mapa->buckets[i] = NULL;
+    }
     return Mapa;
 }
 
