@@ -96,3 +96,9 @@ hashmap.c:58:11: error: ‘HashMap {aka struct HashMap}’ has no member named �
            buckets
 Compilation failed
 0bf6281
+Thu Apr  7 15:28:57 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|6
+total_score: 0/70
+f0307e5
