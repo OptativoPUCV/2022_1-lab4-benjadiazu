@@ -52,9 +52,7 @@ void insertMap(HashMap * map, char * key, void * value) {
     if (map->buckets[posicion] == NULL){
         map->buckets[posicion] = aux;
     }
-    else{
-        createPair(key,value);
-    }
+
     map->size++;
     
 }
