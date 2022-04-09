@@ -79,7 +79,7 @@ Pair * searchMap(HashMap * map,  char * key) {
     long posicion = hash(key,map->capacity);
     Pair *aux;
     
-    while (map->buckets[posicion]->key != NULL){
+    while (map->buckets[posicion] != NULL){
         if (map->buckets[posicion]->key == key){
             aux = map->buckets[posicion];
             map->current = posicion;
