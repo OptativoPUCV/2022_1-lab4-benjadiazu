@@ -589,3 +589,9 @@ Sat Apr  9 23:17:56 UTC 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 390f631
+Sat Apr  9 23:19:18 UTC 2022: 
+ hashmap.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+ tests:  8|3
+total_score: 40/70
+4a76541
