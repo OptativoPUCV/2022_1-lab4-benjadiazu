@@ -85,7 +85,6 @@ Pair * searchMap(HashMap * map,  char * key) {
         }
         posicion = (posicion + 1)%(map->capacity);   
     }
-    return NULL;
 }
 
 Pair * firstMap(HashMap * map) {

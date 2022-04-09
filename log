@@ -457,3 +457,14 @@ Sat Apr  9 19:35:05 UTC 2022:
  tests:  5|4
 total_score: 30/70
 4b6178f
+Sat Apr  9 19:36:51 UTC 2022: 
+ hashmap.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:88:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+4d6341c
