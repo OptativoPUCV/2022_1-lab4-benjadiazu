@@ -80,6 +80,7 @@ Pair * searchMap(HashMap * map,  char * key) {
 
     while (map->buckets[posicion] != NULL){
         if (map->buckets[posicion]->key == key){
+            map->current = posicion;
             return map->buckets[posicion];
         }
         posicion = (posicion + 1)%(map->capacity);   
