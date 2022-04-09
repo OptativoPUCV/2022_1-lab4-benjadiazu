@@ -664,3 +664,17 @@ Sat Apr  9 23:52:25 UTC 2022:
  tests:  15|2
 total_score: 50/70
 1f0c7a0
+Sat Apr  9 23:54:21 UTC 2022: 
+ hashmap.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:4:0:
+hashmap.c: In function ‘nextMap’:
+hashmap.c:112:21: error: subscripted value is neither array nor pointer nor vector
+     if (map->current[posicion] != NULL){
+                     ^
+hashmap.c:119:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+b4be31a
