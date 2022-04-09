@@ -567,3 +567,14 @@ Sat Apr  9 23:13:20 UTC 2022:
  tests:  8|3
 total_score: 40/70
 a1347f5
+Sat Apr  9 23:17:26 UTC 2022: 
+ hashmap.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:74:10: error: unused variable ‘posicion’ [-Werror=unused-variable]
+     long posicion = hash(key,map->capacity);
+          ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+376b1c6
