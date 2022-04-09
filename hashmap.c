@@ -96,7 +96,7 @@ Pair * firstMap(HashMap * map) {
 
     int posicion = 0;
 
-    while (map->buckets[posicion] == NULL){
+    while (map->buckets[posicion] == NULL || map->buckets[posicion]->key == NULL){
         posicion = (posicion+1)%(map->capacity);
     }
     map->current = posicion;
