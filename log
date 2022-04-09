@@ -600,3 +600,14 @@ Sat Apr  9 23:20:26 UTC 2022:
  1 file changed, 1 insertion(+)
  tests:  0|0
 ce8f1cc
+Sat Apr  9 23:21:17 UTC 2022: 
+ hashmap.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:74:11: error: unused variable ‘aux’ [-Werror=unused-variable]
+     Pair *aux = searchMap(map,key);
+           ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+44f9220
