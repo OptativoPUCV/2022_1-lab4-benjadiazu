@@ -77,13 +77,11 @@ void eraseMap(HashMap * map,  char * key) {
 
 Pair * searchMap(HashMap * map,  char * key) {   
     long posicion = hash(key,map->capacity);
-    Pair *aux;
     
     while (map->buckets[posicion] != NULL){
         if (map->buckets[posicion]->key == key){
             map->current = posicion;
-            aux = map->buckets[posicion];
-            return aux;
+            return map->buckets[posicion];
         }
         posicion = (posicion + 1)%(map->capacity);   
     }
