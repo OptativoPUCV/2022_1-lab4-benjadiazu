@@ -60,8 +60,11 @@ void enlarge(HashMap * map) {
     map->capacity *= 2;
     map->buckets = (Pair**)calloc(sizeof(Pair*),map->capacity);
     map->size = 0;
-
-    insertMap(map,(*aux)->key,(*aux)->value);
+    long posicion = (map->capacity) / 2;
+    while (posicion != NULL){
+         insertMap(map,(*aux)[posicion]->key,(*aux)[posicion]->value);
+         posicion--;
+    }
 }
 
 

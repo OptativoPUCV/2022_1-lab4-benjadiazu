@@ -1065,3 +1065,20 @@ Sun Apr 10 00:35:06 UTC 2022:
  1 file changed, 1 deletion(-)
  tests:  0|0
 2e07eca
+Sun Apr 10 00:37:52 UTC 2022: 
+ hashmap.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:64:21: error: comparison between pointer and integer [-Werror]
+     while (posicion != NULL){
+                     ^~
+hashmap.c:65:40: error: invalid type argument of ‘->’ (have ‘Pair {aka struct Pair}’)
+          insertMap(map,(*aux)[posicion]->key,(*aux)[posicion]->value);
+                                        ^~
+hashmap.c:65:62: error: invalid type argument of ‘->’ (have ‘Pair {aka struct Pair}’)
+          insertMap(map,(*aux)[posicion]->key,(*aux)[posicion]->value);
+                                                              ^~
+cc1: all warnings being treated as errors
+Compilation failed
+20d61b3
