@@ -62,7 +62,7 @@ void enlarge(HashMap * map) {
     map->size = 0;
     long posicion = (map->capacity) / 2;
     while (posicion != NULL){
-         insertMap(map,(*aux)[posicion]->key,(*aux)[posicion]->value);
+         insertMap(map,(*aux)[posicion]->key,*aux[posicion]->value);
          posicion--;
     }
 }

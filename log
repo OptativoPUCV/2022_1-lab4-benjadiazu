@@ -1082,3 +1082,23 @@ hashmap.c:65:62: error: invalid type argument of ‘->’ (have ‘Pair {aka str
 cc1: all warnings being treated as errors
 Compilation failed
 20d61b3
+Sun Apr 10 00:37:58 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:64:21: error: comparison between pointer and integer [-Werror]
+     while (posicion != NULL){
+                     ^~
+hashmap.c:65:40: error: invalid type argument of ‘->’ (have ‘Pair {aka struct Pair}’)
+          insertMap(map,(*aux)[posicion]->key,*aux[posicion]->value);
+                                        ^~
+hashmap.c:65:46: error: dereferencing ‘void *’ pointer [-Werror]
+          insertMap(map,(*aux)[posicion]->key,*aux[posicion]->value);
+                                              ^~~~~~~~~~~~~~~~~~~~~
+hashmap.c:65:46: error: invalid use of void expression
+          insertMap(map,(*aux)[posicion]->key,*aux[posicion]->value);
+                                              ^
+cc1: all warnings being treated as errors
+Compilation failed
+cf26b71
