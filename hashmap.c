@@ -57,18 +57,20 @@ void enlarge(HashMap * map) {
     enlarge_called = 1; //no borrar (testing purposes)
 
   
-   // Pair **Aux = map->buckets;
-  
+    Pair **Aux = map->buckets;
+    long capacidad = map->capacity;
     map->capacity *= 2;
-    //map->buckets = (Pair**)calloc(sizeof(Pair*),map->capacity);
+    map->buckets = (Pair**)calloc(sizeof(Pair*),map->capacity);
     map->size = 0;
-    char *clave = map->buckets[0]->key;
-    printf("%s",clave);
-    /*
+
+  
+  
+    
     for (int i = 0 ; i < capacidad ; i++){
-        insertMap(map,Aux[i]->key,Aux[i]->value);
+        if (Aux[i]->key != NULL){
+            insertMap(map,Aux[i]->key,Aux[i]->value);
+        }
     }
-  */
     
   
 }
