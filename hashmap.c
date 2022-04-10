@@ -62,7 +62,7 @@ void enlarge(HashMap * map) {
     map->capacity *= 2;
     //map->buckets = (Pair**)calloc(sizeof(Pair*),map->capacity);
     map->size = 0;
-    char *clave = Aux[0]->key;
+    char *clave = map->buckets[0]->key;
     printf("%s",clave);
     /*
     for (int i = 0 ; i < capacidad ; i++){
