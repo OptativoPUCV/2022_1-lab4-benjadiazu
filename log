@@ -1242,3 +1242,8 @@ hashmap.c:42:6: note: expected ‘char *’ but argument is of type ‘char’
 cc1: all warnings being treated as errors
 Compilation failed
 9cc442b
+Sun Apr 10 01:34:52 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+be53e80

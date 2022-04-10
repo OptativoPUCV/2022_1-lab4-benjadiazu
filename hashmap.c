@@ -64,7 +64,7 @@ void enlarge(HashMap * map) {
     long posicion = 0;
 
     while (posicion != aux2){
-       insertMap(map,*aux[posicion]->key,aux[posicion]->value);
+       insertMap(map,aux[posicion]->key,aux[posicion]->value);
        posicion++;
     }
 
