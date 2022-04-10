@@ -96,7 +96,7 @@ Pair * firstMap(HashMap * map) {
 
     int posicion = 0;
 
-    while (map->buckets[posicion] == NULL && map->buckets[posicion]->key == NULL){
+    while (map->buckets[posicion] == NULL || map->buckets[posicion]->key == NULL){
         posicion = (posicion+1)%(map->capacity);
     }
     map->current = posicion;
@@ -106,8 +106,9 @@ Pair * firstMap(HashMap * map) {
 Pair * nextMap(HashMap * map) {
     long posicion = (map->current) + 1;
     int i = map->capacity;
-    while (map->buckets[posicion] == NULL && map->buckets[posicion]->key == NULL){
+    while (map->buckets[posicion] == NULL || map->buckets[posicion]->key == NULL){
         posicion = (posicion+1)%(map->capacity);
+        if (map->buckets)[posicion == NULL ]
     }
     map->current = posicion;
     return map->buckets[posicion]; 

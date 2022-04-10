@@ -784,3 +784,20 @@ hashmap.c:108:9: error: unused variable ‘i’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 533b90e
+Sun Apr 10 00:07:01 UTC 2022: 
+ hashmap.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘nextMap’:
+hashmap.c:111:26: error: expected expression before ‘[’ token
+         if (map->buckets)[posicion == NULL ]
+                          ^
+hashmap.c:112:5: error: expected ‘;’ before ‘}’ token
+     }
+     ^
+hashmap.c:108:9: error: unused variable ‘i’ [-Werror=unused-variable]
+     int i = map->capacity;
+         ^
+cc1: all warnings being treated as errors
+Compilation failed
+c4266ba
