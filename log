@@ -1247,3 +1247,13 @@ Sun Apr 10 01:34:52 UTC 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 be53e80
+Sun Apr 10 01:34:58 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:67:22: error: invalid type argument of unary ‘*’ (have ‘int’)
+        insertMap(map,**aux[posicion]->key,aux[posicion]->value);
+                      ^~~~~~~~~~~~~~~~~~~~
+Compilation failed
+1024a90
