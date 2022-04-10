@@ -865,3 +865,13 @@ hashmap.c:108:9: error: unused variable ‘i’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 ddd8383
+Sun Apr 10 00:08:44 UTC 2022: 
+ hashmap.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘nextMap’:
+hashmap.c:113:5: error: expected ‘;’ before ‘}’ token
+     }
+     ^
+Compilation failed
+5253499
