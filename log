@@ -1194,3 +1194,17 @@ Sun Apr 10 01:30:55 UTC 2022:
  1 file changed, 8 insertions(+), 1 deletion(-)
  tests:  0|0
 78597cc
+Sun Apr 10 01:34:00 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:67:22: error: passing argument 2 of ‘insertMap’ makes pointer from integer without a cast [-Werror=int-conversion]
+        insertMap(map,*aux[posicion]->key,aux[posicion]->value);
+                      ^
+hashmap.c:42:6: note: expected ‘char *’ but argument is of type ‘char’
+ void insertMap(HashMap * map, char * key, void * value) {
+      ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+2f42a97
