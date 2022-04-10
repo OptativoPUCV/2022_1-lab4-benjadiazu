@@ -875,3 +875,9 @@ hashmap.c:113:5: error: expected ‘;’ before ‘}’ token
      ^
 Compilation failed
 5253499
+Sun Apr 10 00:08:50 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  15|2
+total_score: 50/70
+5e9305d
