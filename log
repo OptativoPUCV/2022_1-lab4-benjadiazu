@@ -1426,3 +1426,8 @@ hashmap.c:66:14: error: format ‘%c’ expects argument of type ‘int’, but 
 cc1: all warnings being treated as errors
 Compilation failed
 878a585
+Sun Apr 10 18:16:14 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+6642e5b
