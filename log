@@ -1218,3 +1218,13 @@ hashmap.c:67:38: error: invalid type argument of ‘->’ (have ‘Pair {aka str
                                       ^~
 Compilation failed
 f6a79c0
+Sun Apr 10 01:34:39 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:67:38: error: invalid type argument of ‘->’ (have ‘Pair {aka struct Pair}’)
+        insertMap(map,(*aux)[posicion]->key,aux[posicion]->value);
+                                      ^~
+Compilation failed
+4f02645
