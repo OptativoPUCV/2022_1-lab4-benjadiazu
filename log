@@ -921,3 +921,9 @@ hashmap.c:107:31: error: ‘posicion’ is used uninitialized in this function [
 cc1: all warnings being treated as errors
 Compilation failed
 2bad902
+Sun Apr 10 00:16:56 UTC 2022: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  16|1
+total_score: 60/70
+81a29a6
