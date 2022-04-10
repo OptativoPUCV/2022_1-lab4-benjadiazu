@@ -1331,3 +1331,20 @@ hashmap.c:42:6: note: expected ‘char *’ but argument is of type ‘Pair ** {
 cc1: all warnings being treated as errors
 Compilation failed
 b97d898
+Sun Apr 10 17:59:56 UTC 2022: 
+ hashmap.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:66:5: error: too few arguments to function ‘insertMap’
+     insertMap();
+     ^~~~~~~~~
+hashmap.c:42:6: note: declared here
+ void insertMap(HashMap * map, char * key, void * value) {
+      ^~~~~~~~~
+hashmap.c:60:12: error: variable ‘Aux’ set but not used [-Werror=unused-but-set-variable]
+     Pair **Aux = (Pair**)calloc(sizeof(Pair*),map->capacity);
+            ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+a62a284
