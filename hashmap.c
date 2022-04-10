@@ -61,7 +61,7 @@ void enlarge(HashMap * map) {
     long capacidad = map->capacity;
   
     map->capacity *= 2;
-    map->buckets = (Pair**)calloc(sizeof(Pair*),map->capacity);
+    //map->buckets = (Pair**)calloc(sizeof(Pair*),map->capacity);
     map->size = 0;
 
     for (int i = 0 ; i < capacidad ; i++){
