@@ -887,3 +887,14 @@ Sun Apr 10 00:09:24 UTC 2022:
  tests:  15|2
 total_score: 50/70
 2c6d019
+Sun Apr 10 00:11:50 UTC 2022: 
+ hashmap.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘nextMap’:
+hashmap.c:108:9: error: unused variable ‘i’ [-Werror=unused-variable]
+     int i = map->capacity;
+         ^
+cc1: all warnings being treated as errors
+Compilation failed
+0335584
