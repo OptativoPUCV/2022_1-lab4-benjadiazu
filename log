@@ -910,3 +910,14 @@ Sun Apr 10 00:12:07 UTC 2022:
  tests:  15|2
 total_score: 50/70
 bfdc6ba
+Sun Apr 10 00:16:05 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+test.c: In function ‘nextMap’:
+hashmap.c:107:31: error: ‘posicion’ is used uninitialized in this function [-Werror=uninitialized]
+     long posicion = (posicion + 1)%(map->capacity);
+                     ~~~~~~~~~~^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+2bad902
