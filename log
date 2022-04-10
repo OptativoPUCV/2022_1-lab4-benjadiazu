@@ -1399,3 +1399,18 @@ Sun Apr 10 18:14:41 UTC 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 f1382cd
+Sun Apr 10 18:16:02 UTC 2022: 
+ hashmap.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:67:14: error: format ‘%c’ expects argument of type ‘int’, but argument 2 has type ‘char *’ [-Werror=format=]
+     printf("%c",clave);
+             ~^
+             %s
+hashmap.c:61:10: error: unused variable ‘capacidad’ [-Werror=unused-variable]
+     long capacidad = map->capacity;
+          ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+5712288
