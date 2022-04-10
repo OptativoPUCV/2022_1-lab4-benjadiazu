@@ -57,16 +57,14 @@ void enlarge(HashMap * map) {
     enlarge_called = 1; //no borrar (testing purposes)
 
     Pair** aux  = map->buckets;
-    long aux2 = map->capacity;
+  
+  
     map->capacity *= 2;
     map->buckets = (Pair**)calloc(sizeof(Pair*),map->capacity);
     map->size = 0;
+  
     long posicion = 0;
 
-    while (posicion != aux2){
-       insertMap(map,aux[posicion]->key,aux[posicion]->value);
-       posicion++;
-    }
 
     
   

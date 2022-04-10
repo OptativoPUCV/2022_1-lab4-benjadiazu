@@ -1262,3 +1262,17 @@ Sun Apr 10 01:35:05 UTC 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 c9559d2
+Sun Apr 10 17:53:45 UTC 2022: 
+ hashmap.c | 8 +++-----
+ 1 file changed, 3 insertions(+), 5 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:66:10: error: unused variable ‘posicion’ [-Werror=unused-variable]
+     long posicion = 0;
+          ^~~~~~~~
+hashmap.c:59:12: error: unused variable ‘aux’ [-Werror=unused-variable]
+     Pair** aux  = map->buckets;
+            ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+8f08291
