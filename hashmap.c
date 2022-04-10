@@ -59,13 +59,13 @@ void enlarge(HashMap * map) {
   
     Pair **Aux = map->buckets;
     long capacidad = map->capacity;
+  
     map->capacity *= 2;
     map->buckets = (Pair**)calloc(sizeof(Pair*),map->capacity);
     map->size = 0;
 
     for (int i = 0 ; i < capacidad ; i++){
         insertMap(map,Aux[i]->key,Aux[i]->value);
-        map->size++;
     }
     
   
