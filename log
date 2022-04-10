@@ -1049,3 +1049,14 @@ hashmap.c:64:9: error: unused variable ‘posicion’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 365cdef
+Sun Apr 10 00:35:02 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:64:9: error: unused variable ‘posicion’ [-Werror=unused-variable]
+     int posicion = 0;
+         ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+32d23cc
