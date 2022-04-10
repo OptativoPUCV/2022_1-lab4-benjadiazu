@@ -109,7 +109,7 @@ Pair * nextMap(HashMap * map) {
     while (map->buckets[posicion] == NULL || map->buckets[posicion]->key == NULL){
         posicion = (posicion+1)%(map->capacity);
         i--;
-        if (i == 1)return NULL;
+        if (i == 0)return NULL;
     }
     
     map->current = posicion;
