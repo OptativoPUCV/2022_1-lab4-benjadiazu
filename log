@@ -1414,3 +1414,15 @@ hashmap.c:61:10: error: unused variable ‘capacidad’ [-Werror=unused-variable
 cc1: all warnings being treated as errors
 Compilation failed
 5712288
+Sun Apr 10 18:16:09 UTC 2022: 
+ hashmap.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:66:14: error: format ‘%c’ expects argument of type ‘int’, but argument 2 has type ‘char *’ [-Werror=format=]
+     printf("%c",clave);
+             ~^
+             %s
+cc1: all warnings being treated as errors
+Compilation failed
+878a585
