@@ -854,3 +854,14 @@ test.c:100:6: error: ‘hash_test1’ defined but not used [-Werror=unused-funct
 cc1: all warnings being treated as errors
 Compilation failed
 842b1b0
+Sun Apr 10 00:07:27 UTC 2022: 
+ hashmap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:0:
+hashmap.c: In function ‘nextMap’:
+hashmap.c:108:9: error: unused variable ‘i’ [-Werror=unused-variable]
+     int i = map->capacity;
+         ^
+cc1: all warnings being treated as errors
+Compilation failed
+ddd8383
