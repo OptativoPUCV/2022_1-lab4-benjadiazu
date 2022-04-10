@@ -1015,3 +1015,22 @@ hashmap.c:64:9: error: unused variable ‘posicion’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 df8cd73
+Sun Apr 10 00:34:39 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:65:23: error: ‘*aux’ is a pointer; did you mean to use ‘->’?
+     insertMap(map,*aux->key,*aux->value);
+                       ^~
+                       ->
+hashmap.c:65:33: error: ‘*aux’ is a pointer; did you mean to use ‘->’?
+     insertMap(map,*aux->key,*aux->value);
+                                 ^~
+                                 ->
+hashmap.c:64:9: error: unused variable ‘posicion’ [-Werror=unused-variable]
+     int posicion = 0;
+         ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+641912c

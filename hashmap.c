@@ -62,7 +62,7 @@ void enlarge(HashMap * map) {
     map->size = 0;
 
     int posicion = 0;
-    insertMap(map,aux->key,aux->value);
+    insertMap(map,*aux->key,*aux->value);
 }
 
 
