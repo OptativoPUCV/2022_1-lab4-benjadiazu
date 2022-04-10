@@ -1348,3 +1348,8 @@ hashmap.c:60:12: error: variable ‘Aux’ set but not used [-Werror=unused-but-
 cc1: all warnings being treated as errors
 Compilation failed
 a62a284
+Sun Apr 10 18:00:47 UTC 2022: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  0|0
+753fdf2
