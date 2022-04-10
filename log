@@ -1163,3 +1163,18 @@ hashmap.c:59:12: error: unused variable ‘aux’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 8dd1bc8
+Sun Apr 10 01:27:22 UTC 2022: 
+ hashmap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:64:9: error: ‘posicion’ undeclared (first use in this function)
+     aux[posicion];
+         ^~~~~~~~
+hashmap.c:64:9: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:59:12: error: variable ‘aux’ set but not used [-Werror=unused-but-set-variable]
+     Pair **aux  = map->buckets;
+            ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+3e6ffb6
