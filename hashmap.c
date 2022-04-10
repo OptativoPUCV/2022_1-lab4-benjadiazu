@@ -64,7 +64,7 @@ void enlarge(HashMap * map) {
     map->size = 0;
 
     for (int i = 0 ; i < capacidad ; i++){
-        insertMap(map,Aux[i]->key,Aux[i]->value);
+        insertMap(map,Aux[i].key,Aux[i].value);
         map->size++;
     }
     

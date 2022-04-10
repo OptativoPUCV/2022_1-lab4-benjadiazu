@@ -1369,3 +1369,18 @@ Sun Apr 10 18:13:04 UTC 2022:
  1 file changed, 5 insertions(+), 1 deletion(-)
  tests:  0|0
 8db9f31
+Sun Apr 10 18:13:29 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:67:29: error: ‘*(Aux + (sizetype)((long unsigned int)i * 8))’ is a pointer; did you mean to use ‘->’?
+         insertMap(map,Aux[i].key,Aux[i].value);
+                             ^
+                             ->
+hashmap.c:67:40: error: ‘*(Aux + (sizetype)((long unsigned int)i * 8))’ is a pointer; did you mean to use ‘->’?
+         insertMap(map,Aux[i].key,Aux[i].value);
+                                        ^
+                                        ->
+Compilation failed
+a595a5e
