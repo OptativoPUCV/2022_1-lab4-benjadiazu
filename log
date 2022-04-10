@@ -1303,3 +1303,17 @@ hashmap.c:60:12: error: unused variable ‘Aux’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 e186a8a
+Sun Apr 10 17:56:57 UTC 2022: 
+ hashmap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:65:22: error: ‘*Aux’ is a pointer; did you mean to use ‘->’?
+     insertMap(map,Aux->key,Aux->void);
+                      ^~
+                      ->
+hashmap.c:65:33: error: expected identifier before ‘void’
+     insertMap(map,Aux->key,Aux->void);
+                                 ^~~~
+Compilation failed
+eab94fd
