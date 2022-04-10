@@ -985,3 +985,14 @@ hashmap.c:67:27: note: each undeclared identifier is reported only once for each
 cc1: all warnings being treated as errors
 Compilation failed
 400ba65
+Sun Apr 10 00:26:50 UTC 2022: 
+ hashmap.c | 7 -------
+ 1 file changed, 7 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:59:12: error: unused variable ‘aux’ [-Werror=unused-variable]
+     Pair **aux  = map->buckets;
+            ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+91b1be8
