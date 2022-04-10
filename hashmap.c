@@ -60,7 +60,7 @@ void enlarge(HashMap * map) {
     map->capacity *= 2;
     map->buckets = (Pair**)calloc(sizeof(Pair*),map->capacity);
     map->size = 0;
-
+    long posicion = 0;
     aux[posicion];
   
 }

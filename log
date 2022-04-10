@@ -1178,3 +1178,14 @@ hashmap.c:59:12: error: variable ‘aux’ set but not used [-Werror=unused-but-
 cc1: all warnings being treated as errors
 Compilation failed
 3e6ffb6
+Sun Apr 10 01:27:40 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:64:8: error: statement with no effect [-Werror=unused-value]
+     aux[posicion];
+     ~~~^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+bc81064
