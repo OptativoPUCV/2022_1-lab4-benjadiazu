@@ -1276,3 +1276,14 @@ hashmap.c:59:12: error: unused variable ‘aux’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 8f08291
+Sun Apr 10 17:53:49 UTC 2022: 
+ hashmap.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:65:10: error: unused variable ‘posicion’ [-Werror=unused-variable]
+     long posicion = 0;
+          ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+cdcf16a
