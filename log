@@ -961,3 +961,27 @@ hashmap.c:59:12: error: unused variable ‘aux’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 abd8ae2
+Sun Apr 10 00:26:39 UTC 2022: 
+ hashmap.c | 9 +++++++--
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:65:20: error: initialization makes pointer from integer without a cast [-Werror=int-conversion]
+         char*key = *aux[i]->key;
+                    ^
+hashmap.c:66:14: error: conflicting types for ‘key’
+         void*key = *aux[i]->void;
+              ^~~
+hashmap.c:65:14: note: previous definition of ‘key’ was here
+         char*key = *aux[i]->key;
+              ^~~
+hashmap.c:66:29: error: expected identifier before ‘void’
+         void*key = *aux[i]->void;
+                             ^~~~
+hashmap.c:67:27: error: ‘value’ undeclared (first use in this function)
+         insertMap(map,key,value);
+                           ^~~~~
+hashmap.c:67:27: note: each undeclared identifier is reported only once for each function it appears in
+cc1: all warnings being treated as errors
+Compilation failed
+400ba65

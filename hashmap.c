@@ -60,8 +60,13 @@ void enlarge(HashMap * map) {
     map->capacity *= 2;
     map->buckets = (Pair**)calloc(sizeof(Pair*),map->capacity);
     map->size = 0;
-    
-    
+    int i = 0;
+    while (*aux != NULL){
+        char*key = *aux[i]->key;
+        void*key = *aux[i]->void;
+        insertMap(map,key,value);
+        i++;
+    }
 
 }
 
