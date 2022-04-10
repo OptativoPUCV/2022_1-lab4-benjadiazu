@@ -1257,3 +1257,8 @@ hashmap.c:67:22: error: invalid type argument of unary ‘*’ (have ‘int’)
                       ^~~~~~~~~~~~~~~~~~~~
 Compilation failed
 1024a90
+Sun Apr 10 01:35:05 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+c9559d2
